@@ -3,13 +3,17 @@
   "displayName": "wal",
   "description": "wal theme generator",
   "version": "0.1.0",
-  "publisher": "cmschuetz",
+  "publisher": "cmschuetz12",
   "engines": {
     "vscode": "^1.25.0"
   },
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmschuetz/vscode-wal.git"
+  },
   "activationEvents": [
     "*"
   ],
