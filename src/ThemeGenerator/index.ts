@@ -16,29 +16,19 @@ import {
   GitColors,
 } from './types';
 
-function shadeColor(col: string, amt: number) {
-  function curb(val: number) {
+function shadeColor(color: string, amt: number): string {
+  function toHex(val: number) {
     val = Math.min(255, val);
     val = Math.max(0, val);
-    return val;
+    let hexVal = val.toString(16);
+    return hexVal.length === 1 ? '0' : '' + hexVal;
   }
-  col = col.slice(1);
 
-  let R = parseInt(col.substring(0, 2), 16);
-  let G = parseInt(col.substring(2, 4), 16);
-  let B = parseInt(col.substring(4, 6), 16);
+  let R = parseInt(color.substring(1, 3), 16);
+  let G = parseInt(color.substring(3, 5), 16);
+  let B = parseInt(color.substring(5, 7), 16);
 
-  // to make the colour less bright than the input
-  // change the following three "+" symbols to "-"
-  let RR = curb(R + amt).toString(16);
-  let GG = curb(G + amt).toString(16);
-  let BB = curb(B + amt).toString(16);
-
-  RR = RR.length === 1 ? '0' : '' + RR;
-  GG = GG.length === 1 ? '0' : '' + GG;
-  BB = BB.length === 1 ? '0' : '' + BB;
-
-  return '#' + RR + GG + BB;
+  return `#${toHex(R + amt)}${toHex(G + amt)}${toHex(B + amt)}`;
 }
 
 export { Theme, ThemeConfig, ColorOptions, WalColors } from './types';
