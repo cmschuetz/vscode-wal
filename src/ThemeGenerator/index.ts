@@ -31,7 +31,13 @@ function shadeColor(color: string, amt: number): string {
   return `#${toHex(R + amt)}${toHex(G + amt)}${toHex(B + amt)}`;
 }
 
-export { Theme, ThemeConfig, ColorOptions, WalColors } from './types';
+export {
+  Theme,
+  ThemeConfig,
+  ColorOptions,
+  TokenColor,
+  WalColors,
+} from './types';
 
 export const isTextMateTheme = (theme: Theme): theme is string =>
   typeof theme === 'string';

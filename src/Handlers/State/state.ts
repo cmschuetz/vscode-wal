@@ -2,6 +2,7 @@ import * as path from 'path';
 import { ExtensionContext } from 'vscode';
 import {
   ColorOptions,
+  TokenColor,
   Theme,
   ThemeConfig,
   isThemeConfig,
@@ -15,12 +16,14 @@ export class State {
   readonly config: WalConfig;
   private themePickerOpen: boolean;
   walColorTheme: ColorOptions;
+  tokenColors: Array<TokenColor>;
   themes: Map<string, Theme>;
   startupTheme?: ThemeConfig;
 
   constructor(ctx: ExtensionContext) {
     this.walThemePath = ctx.asAbsolutePath(relativeWalThemePath);
     this.walColorTheme = {};
+    this.tokenColors = [];
     this.themes = new Map();
     this.config = new WalConfig();
     this.themePickerOpen = false;
@@ -73,8 +76,8 @@ export class State {
   }
 
   walTheme(): ThemeConfig {
-    const { tokenColorThemeConfig, walColorTheme } = this;
-    const { tokenColors, colors } = tokenColorThemeConfig;
+    const { tokenColorThemeConfig, walColorTheme, tokenColors } = this;
+    const { colors } = tokenColorThemeConfig;
 
     return {
       name: 'Wal',

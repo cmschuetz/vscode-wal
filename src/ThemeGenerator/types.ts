@@ -35,6 +35,17 @@ export interface WalColors {
   };
 }
 
+export interface Settings {
+  foreground: string;
+  fontStyle: string;
+}
+
+export interface TokenColor {
+  name: string;
+  scope: Array<string>;
+  settings: Settings;
+}
+
 export interface ColorOptions
   extends BaseColors,
     TextColors,
