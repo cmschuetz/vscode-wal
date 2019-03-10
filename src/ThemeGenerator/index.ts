@@ -11,6 +11,7 @@ import {
   EditorColors,
   EditorGroupColors,
   ColorOptions,
+  TokenColor,
   TabColors,
   ListsAndTreesColors,
   GitColors,
@@ -176,4 +177,19 @@ export const generateColorTheme = (walColors: WalColors): ColorOptions => {
     (acc, mapper) => Object.assign(acc, mapper(walColors)),
     {}
   );
+};
+
+export const generateTokenColors = (
+  walColors: WalColors
+): Array<TokenColor> => {
+  return [
+    {
+      name: 'Comment',
+      scope: ['comment', 'punctuation.definition.comment'],
+      settings: {
+        fontStyle: 'italic',
+        foreground: walColors.colors.color1,
+      },
+    },
+  ];
 };

@@ -2,7 +2,11 @@ import { extensions, ExtensionContext } from 'vscode';
 import { State } from './State';
 import { onTokenColorsChanged } from './onTokenColorsChanged';
 import { onWalColorsChanged } from './onWalColorsChanged';
-import { generateColorTheme, isThemeConfig } from '../ThemeGenerator';
+import {
+  generateColorTheme,
+  isThemeConfig,
+  generateTokenColors,
+} from '../ThemeGenerator';
 import {
   availableThemes,
   fetchWalColors,
@@ -27,9 +31,8 @@ export const onStartup = async (ctx: ExtensionContext) => {
     await onFirstTimeSetup(state);
   }
 
-  const walColorTheme = generateColorTheme(walColors);
-
-  state.walColorTheme = walColorTheme;
+  state.walColorTheme = generateColorTheme(walColors);
+  state.tokenColors = generateTokenColors(walColors);
   state.themes = themes;
   state.startupTheme =
     startupTheme && isThemeConfig(startupTheme) ? startupTheme : undefined;
