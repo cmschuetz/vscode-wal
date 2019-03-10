@@ -9,6 +9,7 @@ import {
   SideBarColors,
   StatusBarColors,
   EditorColors,
+  EditorGroupColors,
   ColorOptions,
   TabColors,
   ListsAndTreesColors,
@@ -124,8 +125,8 @@ const statusBarColors = (walColors: WalColors): StatusBarColors => ({
 const tabColors = (walColors: WalColors): TabColors => ({
   'tab.activeBackground': walColors.special.background,
   'tab.activeForeground': walColors.special.foreground,
-  'tab.inactiveBackground': shadeColor(walColors.special.background, 20),
-  'tab.inactiveForeground': shadeColor(walColors.special.foreground, 20),
+  'tab.inactiveBackground': shadeColor(walColors.special.background, 30),
+  'tab.inactiveForeground': shadeColor(walColors.special.foreground, 30),
 });
 
 const editorColors = (walColors: WalColors): EditorColors => ({
@@ -147,6 +148,13 @@ const editorColors = (walColors: WalColors): EditorColors => ({
   'editorHint.foreground': walColors.colors.color2,
 });
 
+const editorGroupColors = (walColors: WalColors): EditorGroupColors => ({
+  'editorGroupHeader.tabsBackground': shadeColor(
+    walColors.special.background,
+    20
+  ),
+});
+
 const gitColors = (walColors: WalColors): GitColors => ({
   'gitDecoration.modifiedResourceForeground': walColors.colors.color3,
   'gitDecoration.deletedResourceForeground': walColors.colors.color1,
@@ -164,6 +172,7 @@ export const generateColorTheme = (walColors: WalColors): ColorOptions => {
     statusBarColors,
     tabColors,
     editorColors,
+    editorGroupColors,
     gitColors,
   ];
 
