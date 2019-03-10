@@ -36,13 +36,13 @@ export interface WalColors {
 }
 
 export interface Settings {
-  foreground: string;
-  fontStyle: string;
+  foreground?: string;
+  fontStyle?: string;
 }
 
 export interface TokenColor {
-  name: string;
-  scope: Array<string>;
+  name?: string;
+  scope: string | Array<string>;
   settings: Settings;
 }
 
