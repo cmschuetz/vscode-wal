@@ -187,7 +187,7 @@ export type SideBarColors = Partial<
   >
 >;
 
-type EditorGroupColors = Partial<
+export type EditorGroupColors = Partial<
   Record<
     | 'editorGroup.border'
     | 'editorGroup.dropBackground'
