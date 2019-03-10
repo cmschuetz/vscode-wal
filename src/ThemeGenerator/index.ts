@@ -103,6 +103,7 @@ const tabColors = (walColors: WalColors): TabColors => ({
 
 const editorColors = (walColors: WalColors): EditorColors => ({
   'editor.background': walColors.special.background,
+  'editor.foreground': walColors.special.foreground,
   'editorOverviewRuler.modifiedForeground': walColors.colors.color3,
   'editorOverviewRuler.addedForeground': walColors.colors.color2,
   'editorOverviewRuler.deletedForeground': walColors.colors.color1,
