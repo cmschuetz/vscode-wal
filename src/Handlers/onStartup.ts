@@ -13,8 +13,6 @@ import {
   loadTheme,
   persistTheme,
 } from './utils';
-import { onSelectTokenColorTheme } from './onSelectTokenColorTheme';
-import { onFirstTimeSetup } from './onFirstTimeSetup';
 
 export const onStartup = async (ctx: ExtensionContext) => {
   const state = new State(ctx);
@@ -27,10 +25,6 @@ export const onStartup = async (ctx: ExtensionContext) => {
     loadTheme(state.walThemePath),
   ]);
 
-  if (!startupTheme) {
-    await onFirstTimeSetup(state);
-  }
-
   state.walColorTheme = generateColorTheme(walColors);
   state.tokenColors = generateTokenColors(walColors);
   state.themes = themes;
@@ -42,6 +36,5 @@ export const onStartup = async (ctx: ExtensionContext) => {
   return {
     onTokenColorsChanged: onTokenColorsChanged(state),
     onWalColorsChanged: onWalColorsChanged(state),
-    onSelectTokenColorTheme: onSelectTokenColorTheme(state),
   };
 };

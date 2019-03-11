@@ -31,26 +31,7 @@
         "label": "Wal",
         "path": "./themes/wal.json"
       }
-    ],
-    "configuration": {
-      "type": "object",
-      "title": "Wal configuration",
-      "properties": {
-        "wal.tokenColorTheme": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "default": null,
-          "description": "Theme used for syntax highlighting"
-        },
-        "wal.autoReload": {
-          "type": "boolean",
-          "default": false,
-          "description": "Auto reload window on configuration changes that require reload"
-        }
-      }
-    }
+    ]
   },
   "husky": {
     "hooks": {
