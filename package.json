@@ -84,6 +84,7 @@
   },
   "dependencies": {
     "strip-json-comments": "^2.0.1",
-    "util.promisify": "^1.0.0"
+    "util.promisify": "^1.0.0",
+    "chokidar": "^2.1.2"
   }
 }

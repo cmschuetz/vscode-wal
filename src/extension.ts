@@ -1,10 +1,10 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import * as fs from 'fs';
 import { onStartup, walColorsPath } from './Handlers';
+import * as chokidar from 'chokidar';
 
-let walColorWatcher: fs.FSWatcher;
+let walColorWatcher: chokidar.FSWatcher;
 
 export async function activate(ctx: vscode.ExtensionContext) {
   const {
@@ -12,8 +12,9 @@ export async function activate(ctx: vscode.ExtensionContext) {
     onWalColorsChanged,
     onSelectTokenColorTheme,
   } = await onStartup(ctx);
-
-  walColorWatcher = fs.watch(walColorsPath, onWalColorsChanged);
+  walColorWatcher = chokidar
+    .watch(walColorsPath, { persistent: true })
+    .on('change', (_: any) => onWalColorsChanged());
 
   ctx.subscriptions.push(
     vscode.commands.registerCommand(
