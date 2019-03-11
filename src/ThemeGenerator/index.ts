@@ -187,21 +187,21 @@ export const generateTokenColors = (
       name: 'support.constant.edge',
       scope: 'support.constant.edge',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'regexpconstantcharacter-class',
       scope: 'constant.other.character-class.regexp',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'regexpoperator.quantifier',
       scope: 'keyword.operator.quantifier.regexp',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
@@ -209,21 +209,21 @@ export const generateTokenColors = (
       scope:
         'punctuation.definition.string.begin,punctuation.definition.string.end',
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'Text',
       scope: 'variable.parameter.function',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'Comments',
       scope: 'comment,punctuation.definition.comment',
       settings: {
-        foreground: walColors.colors.color1,
+        foreground: walColors.colors.color3,
         fontStyle: 'italic',
       },
     },
@@ -231,42 +231,42 @@ export const generateTokenColors = (
       name: 'CommentMarkupLink',
       scope: 'commentmarkup.link',
       settings: {
-        foreground: walColors.colors.color7,
+        foreground: walColors.colors.color1,
       },
     },
     {
       name: 'markupdiff',
       scope: 'markup.changed.diff',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'diff',
       scope: 'meta.diff.header.from-file,punctuation.definition.from-file.diff',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'inserted.diff',
       scope: 'markup.inserted.diff',
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'deleted.diff',
       scope: 'markup.deleted.diff',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'c++function',
       scope: 'meta.function.c,meta.function.cpp',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -274,14 +274,14 @@ export const generateTokenColors = (
       scope:
         'punctuation.section.block.begin.bracket.curly.cpp,punctuation.section.block.end.bracket.curly.cpp,punctuation.terminator.statement.c,punctuation.section.block.begin.bracket.curly.c,punctuation.section.block.end.bracket.curly.c,punctuation.section.parens.begin.bracket.round.c,punctuation.section.parens.end.bracket.round.c,punctuation.section.parameters.begin.bracket.round.c,punctuation.section.parameters.end.bracket.round.c',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'js/tspunctuationseparatorkey-value',
       scope: 'punctuation.separator.key-value',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
@@ -296,42 +296,42 @@ export const generateTokenColors = (
       name: 'js/tsimportkeyword',
       scope: 'keyword.operator.expression.import',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'mathjs/ts',
       scope: 'support.constant.math',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'mathpropertyjs/ts',
       scope: 'support.constant.property.math',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'js/tsvariable.other.constant',
       scope: 'variable.other.constant',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'javatype',
       scope: 'storage.type.annotation.java',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'javasource',
       scope: 'source.java',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -339,49 +339,49 @@ export const generateTokenColors = (
       scope:
         'punctuation.section.block.begin.java,punctuation.section.block.end.java,punctuation.definition.method-parameters.begin.java,punctuation.definition.method-parameters.end.java,meta.method.identifier.java,punctuation.section.method.begin.java,punctuation.section.method.end.java,punctuation.terminator.java,punctuation.section.class.begin.java,punctuation.section.class.end.java,punctuation.section.inner-class.begin.java,punctuation.section.inner-class.end.java,meta.method-call.java,storage.type.generic.java,punctuation.section.class.begin.bracket.curly.java,punctuation.section.class.end.bracket.curly.java,punctuation.section.method.begin.bracket.curly.java,punctuation.section.method.end.bracket.curly.java,punctuation.separator.period.java,meta.method.body.java',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'javamodifier.import',
       scope: 'meta.method.java',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'javamodifier.import',
       scope: 'storage.modifier.import.java,storage.type.java',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'javavariable.name',
       scope: 'meta.definition.variable.name.java',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'operatorlogical',
       scope: 'keyword.operator.logical.js',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'operatorbitwise',
       scope: 'keyword.operator.bitwise',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'operatorchannel',
       scope: 'keyword.operator.channel',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
@@ -389,14 +389,14 @@ export const generateTokenColors = (
       scope:
         'support.constant.property-value.scss,support.constant.property-value.css',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'CSS/SCSS/LESSOperators',
       scope: 'keyword.operator.css,keyword.operator.scss,keyword.operator.less',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
@@ -404,28 +404,28 @@ export const generateTokenColors = (
       scope:
         'support.constant.color.w3c-standard-color-name.css,support.constant.color.w3c-standard-color-name.scss',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'csscomma',
       scope: 'punctuation.separator.list.comma.css',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'cssattribute-name.id',
       scope: 'support.constant.color.w3c-standard-color-name.css',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'cssproperty-name',
       scope: 'support.type.vendored.property-name.css',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
@@ -433,7 +433,7 @@ export const generateTokenColors = (
       scope:
         'punctuation.definition.template-expression.begin,punctuation.definition.template-expression.end',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -441,14 +441,14 @@ export const generateTokenColors = (
       scope:
         'support.module.node,support.type.object.module,support.module.node',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'entity.name.type.module',
       scope: 'entity.name.type.module',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
@@ -456,7 +456,7 @@ export const generateTokenColors = (
       scope:
         'variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -470,7 +470,7 @@ export const generateTokenColors = (
       name: 'js/tsjson',
       scope: 'support.constant.json',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
@@ -482,49 +482,49 @@ export const generateTokenColors = (
         'keyword.operator.optional',
       ],
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'js/tsconsole',
       scope: 'support.type.object.console',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'js/tssupport.variable.property.process',
       scope: 'support.variable.property.process',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'jsconsolefunction',
       scope: 'entity.name.function,support.function.console',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'jsoperator',
       scope: 'keyword.operator',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'jsdom',
       scope: 'support.type.object.dom',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'jsdomvariable',
       scope: 'support.variable.dom,support.variable.property.dom',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -532,7 +532,7 @@ export const generateTokenColors = (
       scope:
         'keyword.operator.arithmetic,keyword.operator.comparison,keyword.operator.decrement,keyword.operator.increment',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
@@ -540,77 +540,77 @@ export const generateTokenColors = (
       scope:
         'keyword.operator.assignment.c,keyword.operator.comparison.c,keyword.operator.c,keyword.operator.increment.c,keyword.operator.decrement.c,keyword.operator.bitwise.shift.c,keyword.operator.assignment.cpp,keyword.operator.comparison.cpp,keyword.operator.cpp,keyword.operator.increment.cpp,keyword.operator.decrement.cpp,keyword.operator.bitwise.shift.cpp',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'Punctuation',
       scope: 'punctuation.separator.delimiter',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'Otherpunctuation.c',
       scope: 'punctuation.separator.c,punctuation.separator.cpp',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'Ctypeposix-reserved',
       scope: 'support.type.posix-reserved.c,support.type.posix-reserved.cpp',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'keyword.operator.sizeof.c',
       scope: 'keyword.operator.sizeof.c,keyword.operator.sizeof.cpp',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'pythonparameter',
       scope: 'variable.parameter.function.language.python',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'pythontype',
       scope: 'support.type.python',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'pythonlogical',
       scope: 'keyword.operator.logical.python',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'meta.function-call.arguments.python',
       scope: 'meta.function-call.arguments.python',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'meta.function-call.python',
       scope: 'meta.function-call.python',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'pyCs',
       scope: 'variable.parameter.function.python',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
@@ -618,91 +618,91 @@ export const generateTokenColors = (
       scope:
         'punctuation.definition.arguments.begin.python,punctuation.definition.arguments.end.python,punctuation.separator.arguments.python,punctuation.definition.list.begin.python,punctuation.definition.list.end.python,meta.function-call.arguments.python',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'pythonfunction-call.generic',
       scope: 'meta.function-call.generic.python',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'pythonplaceholderresettonormalstring',
       scope: 'constant.character.format.placeholder.other.python',
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'Delimiters',
       scope: 'none',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'Operators',
       scope: 'keyword.operator',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'CompoundAssignmentOperators',
       scope: 'keyword.operator.assignment.compound',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'Keywords',
       scope: 'keyword',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'Variables',
       scope: 'variable',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'Languagevariables',
       scope: 'variable.language',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'JavaVariables',
       scope: 'token.variable.parameter.java',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'JavaImports',
       scope: 'import.storage.java',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Packages',
       scope: 'token.package.keyword',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'Packages',
       scope: 'token.package',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
@@ -714,28 +714,28 @@ export const generateTokenColors = (
         'variable.function',
       ],
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'Classes',
       scope: 'entity.name.type.namespace',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Classes',
       scope: 'support.class,entity.name.type.class',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Classname',
       scope: 'entity.name.class.identifier.namespace.type',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
@@ -746,28 +746,28 @@ export const generateTokenColors = (
         'variable.other.class.ts',
       ],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Classnamephp',
       scope: 'variable.other.class.php',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'TypeName',
       scope: 'entity.name.type',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'KeywordControl',
       scope: 'keyword.control',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
@@ -781,28 +781,28 @@ export const generateTokenColors = (
       name: 'ControlElements',
       scope: 'control.elements,keyword.operator.less',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Methods',
       scope: 'keyword.other.special-method',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'Storage',
       scope: 'storage',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'StorageJSTS',
       scope: 'token.storage',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
@@ -811,119 +811,119 @@ export const generateTokenColors = (
       scope:
         'keyword.operator.expression.delete,keyword.operator.expression.in,keyword.operator.expression.of,keyword.operator.expression.instanceof,keyword.operator.new,keyword.operator.expression.typeof,keyword.operator.expression.void',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'JavaStorage',
       scope: 'token.storage.type.java',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Support',
       scope: 'support.function',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'Supporttype',
       scope: 'support.type.property-name',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'Supporttype',
       scope: 'support.constant.property-value',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'Supporttype',
       scope: 'support.constant.font-name',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Metatag',
       scope: 'meta.tag',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'Strings,InheritedClass',
       scope: 'string,entity.other.inherited-class',
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'Constantothersymbol',
       scope: 'constant.other.symbol',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'Integers',
       scope: 'constant.numeric',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Floats',
       scope: 'none',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Boolean',
       scope: 'none',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Constants',
       scope: 'constant',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Constants',
       scope: 'punctuation.definition.constant',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Tags',
       scope: 'entity.name.tag',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'Attributes',
       scope: 'entity.other.attribute-name',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'AttributeIDs',
       scope: 'entity.other.attribute-name.id',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
         fontStyle: 'normal',
       },
     },
@@ -931,7 +931,7 @@ export const generateTokenColors = (
       name: 'Attributeclass',
       scope: 'entity.other.attribute-name.class.css',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
         fontStyle: 'normal',
       },
     },
@@ -939,14 +939,14 @@ export const generateTokenColors = (
       name: 'Selector',
       scope: 'meta.selector',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'Values',
       scope: 'none',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
@@ -954,21 +954,21 @@ export const generateTokenColors = (
       scope: 'markup.heading',
       settings: {
         fontStyle: 'bold',
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'Headings',
       scope: 'markup.headingpunctuation.definition.heading,entity.name.section',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'Units',
       scope: 'keyword.other.unit',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -976,91 +976,91 @@ export const generateTokenColors = (
       scope: 'markup.bold,todo.bold',
       settings: {
         fontStyle: 'bold',
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'Bold',
       scope: 'punctuation.definition.bold',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Italic',
       scope: 'markup.italic,punctuation.definition.italic,todo.emphasis',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'Italic',
       scope: 'emphasismd',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: '[VSCODE-CUSTOM]Markdownheadings',
       scope: 'entity.name.section.markdown',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: '[VSCODE-CUSTOM]MarkdownheadingPunctuationDefinition',
       scope: 'punctuation.definition.heading.markdown',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'punctuation.definition.list.begin.markdown',
       scope: 'punctuation.definition.list.begin.markdown',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: '[VSCODE-CUSTOM]Markdownheadingsetext',
       scope: 'markup.heading.setext',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: '[VSCODE-CUSTOM]MarkdownPunctuationDefinitionBold',
       scope: 'punctuation.definition.bold.markdown',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: '[VSCODE-CUSTOM]MarkdownInlineRaw',
       scope: 'markup.inline.raw.markdown',
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: '[VSCODE-CUSTOM]MarkdownInlineRaw',
       scope: 'markup.inline.raw.string.markdown',
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: '[VSCODE-CUSTOM]MarkdownListPunctuationDefinition',
       scope: 'punctuation.definition.list.markdown',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: '[VSCODE-CUSTOM]MarkdownQuote',
       scope: 'markup.quote.markdown',
       settings: {
-        foreground: walColors.colors.color7,
+        foreground: walColors.colors.color1,
         fontStyle: 'italic',
       },
     },
@@ -1072,21 +1072,21 @@ export const generateTokenColors = (
         'punctuation.definition.metadata.markdown',
       ],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'beginning.punctuation.definition.list.markdown',
       scope: ['beginning.punctuation.definition.list.markdown'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: '[VSCODE-CUSTOM]MarkdownPunctuationDefinitionLink',
       scope: 'punctuation.definition.metadata.markdown',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -1094,7 +1094,7 @@ export const generateTokenColors = (
       scope:
         'markup.underline.link.markdown,markup.underline.link.image.markdown',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
@@ -1102,7 +1102,7 @@ export const generateTokenColors = (
       scope:
         'string.other.link.title.markdown,string.other.link.description.markdown',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
@@ -1123,56 +1123,56 @@ export const generateTokenColors = (
       name: 'RegularExpressions',
       scope: 'string.regexp',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'EscapeCharacters',
       scope: 'constant.character.escape',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'Embedded',
       scope: 'punctuation.section.embedded,variable.interpolation',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'Illegal',
       scope: 'invalid.illegal',
       settings: {
-        foreground: walColors.colors.color11,
+        foreground: walColors.colors.color12,
       },
     },
     {
       name: 'Broken',
       scope: 'invalid.broken',
       settings: {
-        foreground: walColors.colors.color11,
+        foreground: walColors.colors.color12,
       },
     },
     {
       name: 'Deprecated',
       scope: 'invalid.deprecated',
       settings: {
-        foreground: walColors.colors.color11,
+        foreground: walColors.colors.color12,
       },
     },
     {
       name: 'Unimplemented',
       scope: 'invalid.unimplemented',
       settings: {
-        foreground: walColors.colors.color11,
+        foreground: walColors.colors.color12,
       },
     },
     {
       name: 'SourceJsonMetaStructureDictionaryJson>StringQuotedJson',
       scope: 'source.jsonmeta.structure.dictionary.json>string.quoted.json',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -1181,7 +1181,7 @@ export const generateTokenColors = (
       scope:
         'source.jsonmeta.structure.dictionary.json>string.quoted.json>punctuation.string',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -1190,7 +1190,7 @@ export const generateTokenColors = (
       scope:
         'source.jsonmeta.structure.dictionary.json>value.json>string.quoted.json,source.jsonmeta.structure.array.json>value.json>string.quoted.json,source.jsonmeta.structure.dictionary.json>value.json>string.quoted.json>punctuation,source.jsonmeta.structure.array.json>value.json>string.quoted.json>punctuation',
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
@@ -1199,21 +1199,21 @@ export const generateTokenColors = (
       scope:
         'source.jsonmeta.structure.dictionary.json>constant.language.json,source.jsonmeta.structure.array.json>constant.language.json',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: '[VSCODE-CUSTOM]JSONPropertyName',
       scope: 'support.type.property-name.json',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: '[VSCODE-CUSTOM]JSONPunctuationforPropertyName',
       scope: 'support.type.property-name.jsonpunctuation',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -1221,7 +1221,7 @@ export const generateTokenColors = (
       scope:
         'text.html.laravel-bladesource.php.embedded.line.htmlentity.name.tag.laravel-blade',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
@@ -1229,7 +1229,7 @@ export const generateTokenColors = (
       scope:
         'text.html.laravel-bladesource.php.embedded.line.htmlsupport.constant.laravel-blade',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
@@ -1237,42 +1237,42 @@ export const generateTokenColors = (
       scope:
         'support.other.namespace.use.php,support.other.namespace.use-as.php,support.other.namespace.php,entity.other.alias.php,meta.interface.php',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'errorsuppression',
       scope: 'keyword.operator.error-control.php',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'phpinstanceof',
       scope: 'keyword.operator.type.php',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'styledoublequotedarrayindexnormalbegin',
       scope: 'punctuation.section.array.begin.php',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'styledoublequotedarrayindexnormalend',
       scope: 'punctuation.section.array.end.php',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'phpillegal.non-null-typehinted',
       scope: 'invalid.illegal.non-null-typehinted.php',
       settings: {
-        foreground: walColors.colors.color5,
+        foreground: walColors.colors.color2,
       },
     },
     {
@@ -1280,7 +1280,7 @@ export const generateTokenColors = (
       scope:
         'storage.type.php,meta.other.type.phpdoc.php,keyword.other.type.php,keyword.other.array.phpdoc.php',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
@@ -1288,7 +1288,7 @@ export const generateTokenColors = (
       scope:
         'meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
@@ -1296,7 +1296,7 @@ export const generateTokenColors = (
       scope:
         'punctuation.definition.parameters.begin.bracket.round.php,punctuation.definition.parameters.end.bracket.round.php,punctuation.separator.delimiter.php,punctuation.section.scope.begin.php,punctuation.section.scope.end.php,punctuation.terminator.expression.php,punctuation.definition.arguments.begin.bracket.round.php,punctuation.definition.arguments.end.bracket.round.php,punctuation.definition.storage-type.begin.bracket.round.php,punctuation.definition.storage-type.end.bracket.round.php,punctuation.definition.array.begin.bracket.round.php,punctuation.definition.array.end.bracket.round.php,punctuation.definition.begin.bracket.round.php,punctuation.definition.end.bracket.round.php,punctuation.definition.begin.bracket.curly.php,punctuation.definition.end.bracket.curly.php,punctuation.definition.section.switch-block.end.bracket.curly.php,punctuation.definition.section.switch-block.start.bracket.curly.php,punctuation.definition.section.switch-block.begin.bracket.curly.php,punctuation.definition.section.switch-block.end.bracket.curly.php',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
@@ -1304,14 +1304,14 @@ export const generateTokenColors = (
       scope:
         'support.constant.ext.php,support.constant.std.php,support.constant.core.php,support.constant.parser-token.php',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'phpgoto',
       scope: 'entity.name.goto-label.php,support.other.php',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
@@ -1319,35 +1319,35 @@ export const generateTokenColors = (
       scope:
         'keyword.operator.logical.php,keyword.operator.bitwise.php,keyword.operator.arithmetic.php',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'phpregexpoperator',
       scope: 'keyword.operator.regexp.php',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'phpcomparison',
       scope: 'keyword.operator.comparison.php',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'phpheredoc/nowdoc',
       scope: 'keyword.operator.heredoc.php,keyword.operator.nowdoc.php',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'pythonfunctiondecorator@',
       scope: 'meta.function.decorator.python',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
@@ -1355,70 +1355,70 @@ export const generateTokenColors = (
       scope:
         'support.token.decorator.python,meta.function.decorator.identifier.python',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'parameterfunction',
       scope: 'function.parameter',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'parameterfunctionjs/ts',
       scope: 'function.parameter',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'bracefunction',
       scope: 'function.brace',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'parameterfunctionrubycs',
       scope: 'function.parameter.ruby,function.parameter.cs',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'constant.language.symbol.ruby',
       scope: 'constant.language.symbol.ruby',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'rgb-value',
       scope: 'rgb-value',
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'rgbvalue',
       scope: 'inline-color-decorationrgb-value',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'rgbvalueless',
       scope: 'lessrgb-value',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'sassselector',
       scope: 'selector.sass',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -1426,52 +1426,52 @@ export const generateTokenColors = (
       scope:
         'support.type.primitive.ts,support.type.builtin.ts,support.type.primitive.tsx,support.type.builtin.tsx',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'blockscope',
       scope: 'block.scope.end,block.scope.begin',
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'csstoragetype',
       scope: 'storage.type.cs',
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'cslocalvariable',
       scope: 'entity.name.variable.local.cs',
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       scope: 'token.info-token',
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       scope: 'token.warn-token',
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       scope: 'token.error-token',
       settings: {
-        foreground: walColors.colors.color5,
+        foreground: walColors.colors.color2,
       },
     },
     {
       scope: 'token.debug-token',
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
@@ -1482,126 +1482,126 @@ export const generateTokenColors = (
         'punctuation.section.embedded',
       ],
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'ResetJavaScriptstringinterpolationexpression',
       scope: ['meta.template.expression'],
       settings: {
-        foreground: walColors.colors.color3,
+        foreground: walColors.colors.color10,
       },
     },
     {
       name: 'ImportmoduleJS',
       scope: ['keyword.operator.module'],
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'jsFlowtype',
       scope: ['support.type.type.flowtype'],
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'jsFlow',
       scope: ['support.type.primitive'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'jsclassprop',
       scope: ['meta.property.object'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'jsfuncparameter',
       scope: ['variable.parameter.function.js'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'jstemplateliteralsbegin',
       scope: ['keyword.other.template.begin'],
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'jstemplateliteralsend',
       scope: ['keyword.other.template.end'],
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'jstemplateliteralsvariablebracesbegin',
       scope: ['keyword.other.substitution.begin'],
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'jstemplateliteralsvariablebracesend',
       scope: ['keyword.other.substitution.end'],
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'jsoperator.assignment',
       scope: ['keyword.operator.assignment'],
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'gooperator',
       scope: ['keyword.operator.assignment.go', 'keyword.operator.address.go'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Gopackagename',
       scope: ['entity.name.package.go'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'elmprelude',
       scope: ['support.type.prelude.elm'],
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'elmconstant',
       scope: ['support.constant.elm'],
       settings: {
-        foreground: walColors.colors.color6,
+        foreground: walColors.colors.color8,
       },
     },
     {
       name: 'templateliteral',
       scope: ['punctuation.quasi.element'],
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'html/pug(jade)escapedcharactersandentities',
       scope: ['constant.character.entity'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
@@ -1612,91 +1612,91 @@ export const generateTokenColors = (
         'entity.other.attribute-name.pseudo-class',
       ],
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'Clojureglobals',
       scope: ['entity.global.clojure'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Clojuresymbols',
       scope: ['meta.symbol.clojure'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'Clojureconstants',
       scope: ['constant.keyword.clojure'],
       settings: {
-        foreground: walColors.colors.color4,
+        foreground: walColors.colors.color5,
       },
     },
     {
       name: 'CoffeeScriptFunctionArgument',
       scope: ['meta.arguments.coffee', 'variable.parameter.function.coffee'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'IniDefaultText',
       scope: ['source.ini'],
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'Makefileprerequisities',
       scope: ['meta.scope.prerequisites.makefile'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'Makefiletextcolour',
       scope: ['source.makefile'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'Groovyimportnames',
       scope: ['storage.modifier.import.groovy'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
       name: 'GroovyMethods',
       scope: ['meta.method.groovy'],
       settings: {
-        foreground: walColors.colors.color12,
+        foreground: walColors.colors.color7,
       },
     },
     {
       name: 'GroovyVariables',
       scope: ['meta.definition.variable.name.groovy'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'GroovyInheritance',
       scope: ['meta.definition.class.inherited.classes.groovy'],
       settings: {
-        foreground: walColors.colors.color2,
+        foreground: walColors.colors.color9,
       },
     },
     {
       name: 'HLSLSemantic',
       scope: ['support.variable.semantic.hlsl'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
     {
@@ -1710,21 +1710,21 @@ export const generateTokenColors = (
         'support.type.object.hlsl',
       ],
       settings: {
-        foreground: walColors.colors.color10,
+        foreground: walColors.colors.color6,
       },
     },
     {
       name: 'SQLVariables',
       scope: ['text.variable', 'text.bracketed'],
       settings: {
-        foreground: walColors.colors.color8,
+        foreground: walColors.colors.color4,
       },
     },
     {
       name: 'types',
       scope: ['support.type.swift', 'support.type.vb.asp'],
       settings: {
-        foreground: walColors.colors.color9,
+        foreground: walColors.colors.color11,
       },
     },
   ];
