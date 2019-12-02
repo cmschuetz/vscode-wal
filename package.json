@@ -19,13 +19,6 @@
   ],
   "main": "./out/extension",
   "contributes": {
-    "commands": [
-      {
-        "command": "wal.selectTokenColorTheme",
-        "title": "Wal: Select Token Color Theme",
-        "description": "Select theme for syntax highlighting"
-      }
-    ],
     "themes": [
       {
         "label": "Wal",
