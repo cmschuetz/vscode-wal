@@ -1,19 +1,15 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
-import { commands, Extension, workspace } from 'vscode';
+import { Extension, workspace } from 'vscode';
 import promisify from 'util.promisify';
 import stripJsonComments from 'strip-json-comments';
 import { State } from './State';
-import { showReloadPrompt } from './messages';
 import { ColorOptions, ThemeConfig, Theme, WalColors } from '../ThemeGenerator';
 import { ThemeExtension } from './types';
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
-
-const reloadCmd = 'workbench.action.reloadWindow';
-export const reloadWindow = () => commands.executeCommand(reloadCmd);
 
 export const walColorsPath = path.join(
   os.homedir(),
@@ -21,20 +17,6 @@ export const walColorsPath = path.join(
   'wal',
   'colors.json'
 );
-
-export const checkAndAttemptReload = (state: State) => {
-  const { autoReload } = state.config;
-
-  if (!state.reloadNeeded()) {
-    return;
-  }
-
-  if (autoReload) {
-    return reloadWindow();
-  }
-
-  return showReloadPrompt();
-};
 
 export const updateColorCustomizations = async (walColors: ColorOptions) => {
   await mergeConfig('workbench', 'colorCustomizations', { '[Wal]': walColors });
