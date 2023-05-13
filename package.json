@@ -19,38 +19,12 @@
   ],
   "main": "./out/extension",
   "contributes": {
-    "commands": [
-      {
-        "command": "wal.selectTokenColorTheme",
-        "title": "Wal: Select Token Color Theme",
-        "description": "Select theme for syntax highlighting"
-      }
-    ],
     "themes": [
       {
         "label": "Wal",
         "path": "./themes/wal.json"
       }
-    ],
-    "configuration": {
-      "type": "object",
-      "title": "Wal configuration",
-      "properties": {
-        "wal.tokenColorTheme": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "default": null,
-          "description": "Theme used for syntax highlighting"
-        },
-        "wal.autoReload": {
-          "type": "boolean",
-          "default": false,
-          "description": "Auto reload window on configuration changes that require reload"
-        }
-      }
-    }
+    ]
   },
   "husky": {
     "hooks": {
@@ -80,9 +54,10 @@
     "prettier": "^1.14.1",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1",
-    "vscode": "^1.1.18"
+    "vscode": "^1.1.37"
   },
   "dependencies": {
+    "chokidar": "^2.1.2",
     "strip-json-comments": "^2.0.1",
     "util.promisify": "^1.0.0"
   }
