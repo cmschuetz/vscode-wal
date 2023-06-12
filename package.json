@@ -41,6 +41,7 @@
     "vscode:prepublish": "# npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "install": "yes | vsce package && code --install-extension wal-0.1.0.vsix",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "npm run compile && node ./node_modules/vscode/bin/test"
   },
