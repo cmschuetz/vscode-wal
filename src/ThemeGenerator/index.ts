@@ -117,6 +117,7 @@ const statusBarColors = (walColors: WalColors): StatusBarColors => ({
   'statusBar.foreground': walColors.colors.color7,
   'statusBar.debuggingBackground': walColors.colors.color2,
   'statusBar.noFolderBackground': walColors.colors.color2,
+  'statusBarItem.remoteBackground': walColors.colors.color12,
 });
 
 const tabColors = (walColors: WalColors): TabColors => ({

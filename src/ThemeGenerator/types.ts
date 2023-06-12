@@ -391,7 +391,8 @@ export type StatusBarColors = Partial<
     | 'statusBarItem.activeBackground'
     | 'statusBarItem.hoverBackground'
     | 'statusBarItem.prominentBackground'
-    | 'statusBarItem.prominentHoverBackground',
+    | 'statusBarItem.prominentHoverBackground'
+    | 'statusBarItem.remoteBackground',
     string
   >
 >;
