@@ -1,15 +1,11 @@
-import * as fs from 'fs';
+import { readFile, writeFile } from 'fs/promises';
 import * as path from 'path';
 import * as os from 'os';
 import { Extension, workspace } from 'vscode';
-import promisify from 'util.promisify';
 import stripJsonComments from 'strip-json-comments';
 import { State } from './State';
 import { ColorOptions, ThemeConfig, Theme, WalColors } from '../ThemeGenerator';
 import { ThemeExtension } from './types';
-
-const readFile = promisify(fs.readFile);
-const writeFile = promisify(fs.writeFile);
 
 export const walColorsPath = path.join(
   os.homedir(),
@@ -116,7 +112,7 @@ export const mergeConfig = async (
   const configNamespace = workspace.getConfiguration(namespace);
 
   const mergedConfig = {
-    ...configNamespace.get(section),
+    ...(configNamespace.get(section) as any),
     ...value,
   };
 
