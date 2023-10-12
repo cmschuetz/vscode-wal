@@ -4,7 +4,7 @@ import * as os from 'os';
 import { Extension, workspace } from 'vscode';
 import stripJsonComments from 'strip-json-comments';
 import { State } from './State';
-import { ThemeConfig, Theme, WalColors } from '../ThemeGenerator';
+import { ColorOptions, ThemeConfig, Theme, WalColors } from '../ThemeGenerator';
 import { ThemeExtension } from './types';
 
 export const walColorsPath = path.join(
@@ -14,20 +14,20 @@ export const walColorsPath = path.join(
   'colors.json'
 );
 
-// export const updateColorCustomizations = async (walColors: ColorOptions) => {
-//   await mergeConfig('workbench', 'colorCustomizations', { '[Wal]': walColors });
-// };
+export const updateColorCustomizations = async (walColors: ColorOptions) => {
+  await mergeConfig('workbench', 'colorCustomizations', { '[Wal]': walColors });
+};
 
-// const updateTokenColorCustomizations = async (tokenColors?: {} | string) => {
-//   const newConfig =
-//     typeof tokenColors === 'object'
-//       ? { textMateRules: tokenColors }
-//       : undefined;
+const updateTokenColorCustomizations = async (tokenColors?: {} | string) => {
+  const newConfig =
+    typeof tokenColors === 'object'
+      ? { textMateRules: tokenColors }
+      : undefined;
 
-//   await mergeConfig('editor', 'tokenColorCustomizations', {
-//     '[Wal]': newConfig,
-//   });
-// };
+  await mergeConfig('editor', 'tokenColorCustomizations', {
+    '[Wal]': newConfig,
+  });
+};
 
 const updateThemeFile = async (walThemePath: string, walTheme: ThemeConfig) => {
   return await writeFile(walThemePath, JSON.stringify(walTheme, null, 2));
@@ -37,8 +37,8 @@ export const persistTheme = async (state: State) => {
   const theme = state.walTheme();
 
   await Promise.all([
-    // updateColorCustomizations(theme.colors),
-    // updateTokenColorCustomizations(theme.tokenColors),
+    updateColorCustomizations(theme.colors),
+    updateTokenColorCustomizations(theme.tokenColors),
     updateThemeFile(state.walThemePath, theme),
   ]);
 };
