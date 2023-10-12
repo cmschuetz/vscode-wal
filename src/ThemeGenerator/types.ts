@@ -35,6 +35,17 @@ export interface WalColors {
   };
 }
 
+export interface Settings {
+  foreground?: string;
+  fontStyle?: string;
+}
+
+export interface TokenColor {
+  name?: string;
+  scope: string | Array<string>;
+  settings: Settings;
+}
+
 export interface ColorOptions
   extends BaseColors,
     TextColors,
@@ -187,7 +198,7 @@ export type SideBarColors = Partial<
   >
 >;
 
-type EditorGroupColors = Partial<
+export type EditorGroupColors = Partial<
   Record<
     | 'editorGroup.border'
     | 'editorGroup.dropBackground'
@@ -380,7 +391,8 @@ export type StatusBarColors = Partial<
     | 'statusBarItem.activeBackground'
     | 'statusBarItem.hoverBackground'
     | 'statusBarItem.prominentBackground'
-    | 'statusBarItem.prominentHoverBackground',
+    | 'statusBarItem.prominentHoverBackground'
+    | 'statusBarItem.remoteBackground',
     string
   >
 >;

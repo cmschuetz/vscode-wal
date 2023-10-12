@@ -19,38 +19,12 @@
   ],
   "main": "./out/extension",
   "contributes": {
-    "commands": [
-      {
-        "command": "wal.selectTokenColorTheme",
-        "title": "Wal: Select Token Color Theme",
-        "description": "Select theme for syntax highlighting"
-      }
-    ],
     "themes": [
       {
         "label": "Wal",
         "path": "./themes/wal.json"
       }
-    ],
-    "configuration": {
-      "type": "object",
-      "title": "Wal configuration",
-      "properties": {
-        "wal.tokenColorTheme": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "default": null,
-          "description": "Theme used for syntax highlighting"
-        },
-        "wal.autoReload": {
-          "type": "boolean",
-          "default": false,
-          "description": "Auto reload window on configuration changes that require reload"
-        }
-      }
-    }
+    ]
   },
   "husky": {
     "hooks": {
@@ -64,26 +38,27 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "# yarn compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    "package": "yarn compile && yes | yarn vsce package",
+    "install": "yarn package",
+    "install-extension": "code --install-extension wal-0.1.0.vsix",
+    "test": "yarn compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.5",
-    "@types/node": "^7.0.0",
+    "@types/node": "^20.8.2",
     "@types/strip-json-comments": "^0.0.30",
-    "@types/util.promisify": "^1.0.0",
+    "@vscode/vsce": "^2.21.1",
     "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.0",
     "prettier": "^1.14.1",
-    "tslint": "^5.11.0",
-    "typescript": "^3.0.1",
-    "vscode": "^1.1.18"
+    "tslint": "^6.1.3",
+    "typescript": "^5.2.2",
+    "vscode": "^1.1.37"
   },
   "dependencies": {
-    "strip-json-comments": "^2.0.1",
-    "util.promisify": "^1.0.0"
+    "chokidar": "^2.1.2",
+    "strip-json-comments": "^2.0.1"
   }
 }
