@@ -43,7 +43,7 @@
     "watch": "tsc -watch -p ./",
     "package": "yarn compile && yes | yarn vsce package",
     "install": "yarn package",
-    "install-extension": "code --install-extension wal-0.1.0.vsix",
+    "install-extension": "code --no-sandbox --install-extension wal-0.1.0.vsix",
     "test": "yarn compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
